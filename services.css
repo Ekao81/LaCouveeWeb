@@ -10,13 +10,21 @@
 
 .html {
   font-size: 62.5%;
-  
+  overflow: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background: #fdfbfb;
 }
+
+:root {
+    --red: #c10206;
+    --white:#fffbf2;
+    --black:#211d21;
+    --grey:#211d21;
+    --carmine: #a50113;
+  }
 
 /* _________MENTORSHIP LP____________ */
 
@@ -25,6 +33,9 @@ main {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    background: url(https://lh3.googleusercontent.com/pw/AJFCJaXO-qhK5fb0q9X3vu__wND4j9rddbgiVLdTKwZ3Q45sqRutBsYCBYjCgQ2bVbTYhdg0usNJDfmE3i6UypmGq23STBAVSAssKT1hlN59subEGriFHBA=w2400);
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
@@ -44,11 +55,12 @@ main {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 3rem;
+    color: var(--white);
 
     padding: 1rem;
-    border-left: 4px solid greenyellow;
-    border-right: 4px solid greenyellow;
-    background: #f1d8d8;
+    border-top: 4px solid var(--red);
+    border-bottom: 4px solid var(--red);
+    background: rgba(0, 0,0, 0.3);
 }
 
 .mentorship__span {
@@ -59,14 +71,15 @@ main {
 }
 
 .page__header p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 50%;
-    text-align: start;
+    text-align: center;
     margin: 0 auto;
     margin-top: 5rem;
     padding: 3rem 1rem;
     border-top: 3px solid grey;
     border-bottom: 3px solid grey;
+    color: var(--white);
 }
 
 .mentorship__span {
@@ -75,11 +88,19 @@ main {
 
 /* ________OFFER SECTION_________ */
 
-.offers__header {
+.wrapper__offers {
+    margin-bottom: 3rem;
+}
+
+.offers__header{
     text-transform: uppercase;
     font-size: 3rem;
-    margin: 5rem auto;
     
+    padding: 10px 20px;
+    
+    color: var(--white);
+    margin: 5rem auto;
+
 }
 
 .offers {
@@ -90,52 +111,44 @@ main {
 }
 
 .offer-1 {
-    width: 40%;
+    width: 80%;
     border: solid;
     padding: 15px;
     margin: 1em;
     background: rgb(241, 212, 212);
+}
+
+
+.offer-1 h1 {
+    font-size: 2rem;
+    padding: 10px;
+    color: var(--carmine);
 }
 
 .offer-1 p {
     text-align: start;
     border-left: solid;
+    font-size: 1.3rem;
     padding: 20px;
+    margin: 1rem;
 }
 
-.offer-1 button { 
-    width: 80%;
-    margin: 1em;
-    height: 40%;
-    font-size: 2rem;
-    padding: 1em;
-}
-
-/* ____________ */
-
-.offer-2 {
+.mentorship-offer {
     width: 40%;
-    border: solid;
-    padding: 15px;
-    margin: 1em;
-    background: rgb(241, 212, 212);
 }
 
-.offer-2 p {
-    text-align: start;
-    border-left: solid;
-    padding: 20px;
-}
-
-.offer-2 button { 
-    width: 80%;
+.mentorship-offer button { 
+    width: 70%;
     margin: 1em;
-    height: 40%;
     font-size: 2rem;
     padding: 1em;
+    cursor: pointer;
 }
 
-/*  */
+a {
+    text-decoration: none;
+    color: var(--red);
+}
 /*  */
 /* _________VIDEO ANALYSIS LP_________ */
 
@@ -145,6 +158,7 @@ main {
     padding: 15px;
     margin: 1em;
     background: rgb(241, 212, 212);
+    
 }
 
 
@@ -160,6 +174,8 @@ main {
     height: 40%;
     font-size: 2rem;
     padding: 1em;
+    cursor: pointer;
+    align-self: baseline;
 }
 
 /* ____________ */
@@ -185,6 +201,8 @@ main {
     height: 40%;
     font-size: 2rem;
     padding: 1em;
+    cursor: pointer;
+    align-self: baseline;
 }
 
 
@@ -197,6 +215,17 @@ main {
     flex-direction: column;
     align-items: center;
     
+}
+
+.training__program h2 {
+    font-size: 2.5rem;
+    width: 70%;
+    margin: 1rem auto;
+    color: var(--white);
+}
+
+.training__program  p{
+    width: 70%;
 }
 
 .tp__offer-1 {
@@ -224,10 +253,10 @@ main {
 }
 
 .tp__offer-1 button {
-    width: 20%;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* __________ */
@@ -257,11 +286,13 @@ main {
 }
 
 .tp__offer-2 button {
-    width: 20%;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 2rem;
+    cursor: pointer;
 }
+
+
 
 /*  */
 /*  */
