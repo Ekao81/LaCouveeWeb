@@ -271,6 +271,7 @@ h1 {
 .about__img {
   max-width: 100%;
   margin-top: 6em;
+  aspect-ratio: attr(width) / attr(height);
 }
 
 .btn {
@@ -341,7 +342,7 @@ h1 {
 }
 
 .button-grow {
-  color: var(--red);
+  color: orange;
   background-color: transparent;
   padding: 0 16px;
   cursor: pointer;
@@ -350,16 +351,16 @@ h1 {
 
 .button-grow:hover {
   transform: scale(1.1);
-  color: var(--white);
+  color: var(--carmine);
 }
 
 .anchor-1 {
   text-decoration: none;
-  color: var(--carmine);
+  color: var(--white);
 }
 
 .anchor-1:hover {
-  color: var(--white);
+  color: var(--carmine);
   text-decoration: none;
   cursor: pointer;
 
@@ -466,7 +467,6 @@ h1 {
 .testimonial__content-2 {
   margin: 0 auto;
   width: 70%;
-  background: url(https://www.commissionaires-ottawa.on.ca/pages/wp-content/uploads/2015/01/testimonial_background_light_695x300.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
