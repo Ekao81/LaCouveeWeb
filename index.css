@@ -31,6 +31,11 @@ h1 {
   --grey:#211d21;
   --carmine: #a50113;
 }
+
+
+
+
+
 /* ///////////..utility classes../////////// */
 
 .hero-1 {
@@ -43,7 +48,7 @@ h1 {
 }
 
 .hero-1 {    
-  background:url(https://lh3.googleusercontent.com/cHUhTHpWPyphl1OINym0EzWEzvBv53magwzqtOdyGfz7ivf6jM_w8_6FbYKd6FnQzaKOV7aGpFy49DCVSorykHYw73C5YsfOLMxITnTqpIRhIVyUGg3B-MJ1HykPgxGiKw2Y3Ql70Q=w2400);
+  background:url(https://lh3.googleusercontent.com/5fM709YOnsdCuRwT-J8a0zeg4qS8jva_3SB6n3DPteBjCAdn-acWg6LqJAWgdXokVoX_dHCM3jVTUB7q3EHN6QTukyTmzURnGLqWX67M5aNglexcoVapYSGV5d_jkvBgin88-Tz6xQ=w2400);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: clip;
@@ -60,7 +65,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  background: url(https://lh3.googleusercontent.com/pw/AJFCJaXO-qhK5fb0q9X3vu__wND4j9rddbgiVLdTKwZ3Q45sqRutBsYCBYjCgQ2bVbTYhdg0usNJDfmE3i6UypmGq23STBAVSAssKT1hlN59subEGriFHBA=w2400);
+  background: url(https://lh3.googleusercontent.com/5fM709YOnsdCuRwT-J8a0zeg4qS8jva_3SB6n3DPteBjCAdn-acWg6LqJAWgdXokVoX_dHCM3jVTUB7q3EHN6QTukyTmzURnGLqWX67M5aNglexcoVapYSGV5d_jkvBgin88-Tz6xQ=w2400);
 }
 
 .container {
@@ -69,7 +74,7 @@ h1 {
   width: 90%;
   color: var(--black);
   margin: 0 auto;
-    
+  background-image: url(https://lh3.googleusercontent.com/5fM709YOnsdCuRwT-J8a0zeg4qS8jva_3SB6n3DPteBjCAdn-acWg6LqJAWgdXokVoX_dHCM3jVTUB7q3EHN6QTukyTmzURnGLqWX67M5aNglexcoVapYSGV5d_jkvBgin88-Tz6xQ=w2400);
 }
 
 .container-1 {
@@ -121,7 +126,9 @@ h1 {
   height: 50px;
   padding: 0 20px;
   z-index: 1000;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
 }
 
 .navbar-container {
@@ -131,6 +138,7 @@ h1 {
   max-width: 1200px;
   height: 64px;
   align-items: center;
+  position: relative;
 }
 
 .menu-items {
@@ -157,10 +165,25 @@ h1 {
   transition: color 0.3s ease-in-out;
 }
 
-.logo {
+.menu-items > li {
+  padding: 5px;
+  
+}
+
+.contact-me-li  {
+  padding: 5px;
+  border-radius: 12px;
+  background-color: var(--red);
+}
+
+
+.logo-img {
   order: 1;
-  font-size: 2.3rem;
-  margin-bottom: 0.5rem;
+  width: 2.4rem;
+  aspect-ratio: 1;
+  position: absolute;
+
+  top: 18%;
 }
 
 @media (max-width: 768px) {
@@ -175,7 +198,7 @@ h1 {
   z-index: 2;
 
   color: var(--white);
-  background: url(https://lh3.googleusercontent.com/pw/AJFCJaXzYnv7ofCmb084QVqUDw_BVuHPXgJLAaujbweyyyrh6JJxMNLl-tn-PyTiWsjTNRQu_sEvNtRs-j4Xff_BFNJCbtBAp_pBs8CP3jXFzy58krCYV3w=w2400);
+  background: url(https://lh3.googleusercontent.com/vFEbSUAcH7PiFOXVAgfSs59Yio-pmoTLMBGSB9HvwsKyb54yxzsjzy0o3x5iNFFMf4kEHvd2kA3GA6AuI9fM2yArrqESKLFOteYB9oAcIByaGLjtyZM_BNPG7lqMAfQ4BQBsi6gtUw=w2400);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,6 +209,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    backdrop-filter: blur(10px);
 }
 
 .s1__welcome_text {
@@ -194,6 +218,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 3em;
+    
 }
 
 .s1__span {
@@ -831,6 +856,10 @@ h1 {
     .container-4 {
       width: 100%;
       margin: 0;
+    }
+
+    .logo-img {
+      right: 1%;
     }
 
     .container {

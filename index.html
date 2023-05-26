@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -35,10 +35,13 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="contact-me-li"><a href="#contact">CONTACT ME</a></li>
           </ul>
-          <h1 class="logo">CL</h1>
+          
+          
+          <H1><img class="logo-img" src="https://lh3.googleusercontent.com/u98pAE9pTZdagwwypz3o6ghPPuxI2x-qkLC4IVs-I2x-05YPj1tMd51fxZfIBPTFCAnvjC6T90mzI5BTZUWCpXcbNZhVRuqcoT6TNeLKSxJhtQ8gXfJ8fPPaYlYs7zPqP1_6nD4SSQ=w2400" alt="logo"></H1>
       </div>
+      
       </nav>
     </div>
    
@@ -59,21 +62,21 @@
     </div>
     <div id="about" class="hero-2">
       <div class="container-2">
-        <div class="about__content about__content-1">
+        <div class="about__content about__content-1" data-aos="slide-left">
           <div class="about__sub_content">
-            <h1 class="about__h1">about me</h1>
+            <h1 class="about__h1" >about me</h1>
             <p class="about__h1_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora.</p>
           </div>
           <div class="about__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque facere veniam eos odio maiores voluptate atque. Facere possimus natus quasi. Debitis, numquam omnis rerum ipsa porro ducimus aliquam perferendis sit eveniet libero consequatur soluta excepturi et dolore quo explicabo? Debitis, numquam omnis rerum ipsa porro ducimus aliquam perferendis sit eveniet libero consequatur soluta excepturi et dolore quo explicabo? Debitis, numquam omnis rerum ipsa porro ducimus aliquam perferendis sit eveniet libero consequatur soluta excepturi et dolore quo explicabo?</div>
           
         </div>
-        <div class="about__content about__content-2">
+        <div class="about__content about__content-2" data-aos="slide-right">
           <img class="about__img" src="https://lh3.googleusercontent.com/5V5C80kEkDj8R5rY_jW2m9_4Eyi8s0kr1h75Yfu_g6YqFsmQQqkAOhuSOERCAhjHY0sxBmWdrXhm8xfnO15R5CdAy2dGG5P1-SXDuhlBHW7X2-fPGIJuXJV1CgEQkByMPcP-hp7ojw=w2400" alt="Connor in helmet">
         </div>
       </div>
 
       <div id="services" class="container-3">
-        <div class="services__content services__content-1">
+        <div class="services__content services__content-1" data-aos="slide-up">
           <h3>Services</h3>
           <h2>What Im great at</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a, unde consequatur nemo dolorem suscipit.</p>
@@ -135,7 +138,7 @@
       </div>
 
       <div class="container-testimonials">
-        <div class="testimonial__content-1">
+        <div class="testimonial__content-1 " data-aos="slide-up">
           <h3>Testimonials</h3>
           <h1>Feedback From Customers</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, tempore.</p>
@@ -214,7 +217,7 @@
       </div>
 
       <div id="blog" class="container-4">
-        <div class="blog__content">
+        <div class="blog__content" data-aos="slide-up">
           <h3>Blog</h3>
           <h2>My latest articles</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quae asperiores iste.</p>
@@ -252,7 +255,7 @@
         </div>
       </div>
       <div id="contact" class="container-5">
-        <div class="contact-1">
+        <div class="contact-1" data-aos="slide-up">
           <h3>Contact</h3>
           <h1>Ways To Contact Me</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus quia distinctio repellat neque aperiam!</p>
@@ -297,7 +300,13 @@
     </div>
 
 
-  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
 </body>
 <!-- 
     .................../ JS Code for smooth scrolling /...................... -->
