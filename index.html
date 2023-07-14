@@ -18,6 +18,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,11 +37,15 @@
           <span class="line line3"></span>
           </div>
           <ul class="menu-items">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li class="contact-me-li"><a href="#contact">CONTACT ME</a></li>
+          <!-- <li><a href="#home">Home</a></li> -->
+          <div class="li-left">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+          </div>
+          <div class="li-right">
+            <li><a href="#blog">Blog</a></li>
+            <li class="contact-me-li"><a class="a-red" href="#contact">CONTACT ME</a></li>
+          </div>
           </ul>
           
           
@@ -49,28 +59,55 @@
         
         <div id="home" class="container section__1">
             <div class="s1__content s1__welcome_vh">
-                <h2 class="s1__welcome_text"><span class="s1__span">LaCouvee</span>Goaltending</h2>
-            </div>
-            <div class="s1__content s1__text_vh">
-                
-                <h3>LaCouveeGoaltending 6th year PRO (BBA,MSSM)</h3>
-                
-                    <i class="fa-solid fa-circle-arrow-down"></i>
-                
+              <div class="main-image">
+                <img src="https://lh3.googleusercontent.com/pw/AIL4fc8ag5xX_MRibai_lP8Orki8tMJ5nL4g-sjX7wOwDlmsHVmAUViT686MXUf1E1UvPxzMzKfb4_PyJsGv4dsaESzMJHpFmhb8yKn_XFLL7wDaFOaEM38=w2400" alt="Connor in action">
+              </div>
+
+               <div class="right-side-panel" data-aos="fade-left">
+                 <span  class="right-side-span animate__backInRight">
+                  <p>goaltending</p>
+                  <p>lacouvee</p>
+                 </span>
+               </div>
+
+               <div class="left-side-panel" data-aos="fade-up"
+               data-aos-anchor-placement="left-bottom"  data-aos-delay="1000">
+                <span class="left-side-span">
+                  <p class="big-p">No.1</p>
+                  <p>Goaltending<br>Programs</p>
+                </span>
+               </div>
+
+               <div class="puck-sprite-1" data-aos="fade-down-right">
+                <img src="https://lh3.googleusercontent.com/pw/AIL4fc_CPnxD6_QmBvOciXjOPdjGZTdBCPEDDOcrgKGZkGD476Y7LX36K5GAaC-fhZRiB_KFVjmgRRCL_qR0oz7Ke-Cj96x1R6FSbdAkPLn72YanFjfL0wE=w2400" alt="puck">
+               </div>
+               <div class="puck-sprite-2" data-aos="fade-up-left" data-aos-delay="400">
+                <img src="https://lh3.googleusercontent.com/pw/AIL4fc_CPnxD6_QmBvOciXjOPdjGZTdBCPEDDOcrgKGZkGD476Y7LX36K5GAaC-fhZRiB_KFVjmgRRCL_qR0oz7Ke-Cj96x1R6FSbdAkPLn72YanFjfL0wE=w2400" alt="puck">
+               </div>
+               <div class="puck-sprite-3" data-aos="fade-left" data-aos-delay="900">
+                <img src="https://lh3.googleusercontent.com/pw/AIL4fc_CPnxD6_QmBvOciXjOPdjGZTdBCPEDDOcrgKGZkGD476Y7LX36K5GAaC-fhZRiB_KFVjmgRRCL_qR0oz7Ke-Cj96x1R6FSbdAkPLn72YanFjfL0wE=w2400" alt="puck">
+               </div>
+               <div class="puck-sprite-4" data-aos="fade-up-right" data-aos-delay="700">
+                <img src="https://lh3.googleusercontent.com/pw/AIL4fc_CPnxD6_QmBvOciXjOPdjGZTdBCPEDDOcrgKGZkGD476Y7LX36K5GAaC-fhZRiB_KFVjmgRRCL_qR0oz7Ke-Cj96x1R6FSbdAkPLn72YanFjfL0wE=w2400" alt="puck">
+               </div>
             </div>
         </div>
     </div>
+
     <div id="about" class="hero-2">
       <div class="container-2">
-        <div class="about__content about__content-1" data-aos="fade-up-right">
+        <div class="about__content about__content-1" ">
           <div class="about__sub_content">
             <h1 class="about__h1" >about me</h1>
-            <p class="about__h1_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora.</p>
+            <p class="about__h1_text">Personal information from me, about me.</p>
           </div>
-          <div class="about__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque facere veniam eos odio maiores voluptate atque. Facere possimus natus quasi. Debitis, numquam omnis rerum ipsa porro ducimus aliquam perferendis sit eveniet libero consequatur soluta excepturi et dolore quo explicabo? Debitis, numquam omnis rerum ipsa porro ducimus aliquam perferendis sit eveniet libero consequatur soluta excepturi et dolore quo explicabo? Debitis, numquam omnis rerum ipsa porro ducimus aliquam perferendis sit eveniet libero consequatur soluta excepturi et dolore quo explicabo?</div>
+          <div class="about__p">Hey, I'm Connor LaCouvee, and I'm having an incredible journey as a professional goalie for the past six years. Throughout my career, I've had the privilege of playing in various leagues such as the AHL, ECHL, and even in Europe, gaining invaluable experience and honing my skills on the ice.
+          
+          With a strong focus on technique, mental fortitude, and overall growth, I aim to provide aspiring goaltenders with the tools they need to succeed. Whether it's enhancing agility, or fostering leadership skills, I tailor my coaching approach to meet each student's unique needs. Together, we'll embark on a fueling your confidence and helping you unlock your full potential. Join me and let's make your dreams between the pipes a reality!
+          </div>
           
         </div>
-        <div class="about__content about__content-2" data-aos="fade-up-left">
+        <div class="about__content about__content-2" ">
           <img class="about__img" src="https://lh3.googleusercontent.com/5V5C80kEkDj8R5rY_jW2m9_4Eyi8s0kr1h75Yfu_g6YqFsmQQqkAOhuSOERCAhjHY0sxBmWdrXhm8xfnO15R5CdAy2dGG5P1-SXDuhlBHW7X2-fPGIJuXJV1CgEQkByMPcP-hp7ojw=w2400" alt="Connor in helmet">
         </div>
       </div>
@@ -79,7 +116,7 @@
         <div class="services__content services__content-1" data-aos="zoom-in-up">
           <h3>Services</h3>
           <h2>What Im great at</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a, unde consequatur nemo dolorem suscipit.</p>
+          <p>Products that I'm offering are developed and practiced by a profesionalls</p>
         </div>
         <div class="services__content services__content-2">
           <div class="services__item button-grow">
@@ -87,11 +124,11 @@
               <div class="services__item_box">
                 <i class="fa fa-chalkboard-user" style="color: #84fbfb;"></i>
                 <h3>Mentorship</h3>
-                <p>Lorem ipsum dolor sitt.</p>
+                <p>Goalie Mentorship</p>
               </div>
             </a>
             <div class="services__item_box-2">
-              <h2>9+</h2>
+              <h2>2+</h2>
               <p>years of experience</p>
             </div>
           </div>
@@ -100,7 +137,7 @@
               <div class="services__item_box">
                 <i class="fa fa-school" style="color: #80ffff;"></i>
                 <h3>Video Analysis</h3>
-                <p>Lorem ipsum lit</p>
+                <p>30', 60' Sessions</p>
               </div>
             </a>
             <div class="services__item_box-2">
@@ -113,7 +150,7 @@
               <div class="services__item_box">
                 <i class="fa fa-hockey-puck" style="color: #80ffff;"></i>
                 <h3>Training Programs</h3>
-                <p>Lorem ipsum dolor sit.</p>
+                <p>On-ice + Off-season </p>
               </div>
             </a>
             <div class="services__item_box-2">
@@ -126,7 +163,7 @@
               <div class="services__item_box">
                 <i class="fa fa-dumbbell" style="color: #80ffff;"></i>
                 <h3>Career Consultation</h3>
-                <p>Lorem ipsum dolor sit.</p>
+                <p>30' Session</p>
               </div>
             </a>
             <div class="services__item_box-2">
@@ -141,7 +178,7 @@
         <div class="testimonial__content-1 " data-aos="zoom-in-up">
           <h3>Testimonials</h3>
           <h1>Feedback From Customers</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, tempore.</p>
+          <p>A bit of a reviews of my honest work, I'm thankful for every single feedback you leave on my socials, so you help me IMPROVE!</p>
         </div>
         <div class="testimonial__content-2">
           <div class="testimonial__item testimonial__item-1">
@@ -220,7 +257,7 @@
         <div class="blog__content" data-aos="zoom-in-up">
           <h3>Blog</h3>
           <h2>My latest articles</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quae asperiores iste.</p>
+          <p>You can read here, about my recent activity on either my blog or social media</p>
         </div>
 
         <div class="grid">
@@ -258,7 +295,7 @@
         <div class="contact-1" data-aos="zoom-in-up">
           <h3>Contact</h3>
           <h1>Ways To Contact Me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus quia distinctio repellat neque aperiam!</p>
+          <p>Feel free to contact me anywhere you feel like it's the most comfortable for you, I'm responding everywhere!</p>
         </div>
         <div class="contact-2">
           <div class="contact-2__content">
@@ -295,6 +332,10 @@
                   Youtube</div>
               </a>
           </div>
+        </div>
+        <div class="legal-footer">
+          <img class="logo-img-footer" src="https://lh3.googleusercontent.com/u98pAE9pTZdagwwypz3o6ghPPuxI2x-qkLC4IVs-I2x-05YPj1tMd51fxZfIBPTFCAnvjC6T90mzI5BTZUWCpXcbNZhVRuqcoT6TNeLKSxJhtQ8gXfJ8fPPaYlYs7zPqP1_6nD4SSQ=w2400" alt="logo">
+          <p>Copyright © 2023 LaCouveeGoaltending</p>
         </div>
       </div>
     </div>
