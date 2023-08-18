@@ -311,6 +311,30 @@ a {
 
 /*  */
 
+/* Privacy Policy */
+
+.privacyPolicy {
+    background-color: rgb(151, 151, 151);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.privacyPolicy h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.privacyPolicy span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 /* BTN */
 
 button {
