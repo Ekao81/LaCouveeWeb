@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    background:url(https://lh3.googleusercontent.com/5fM709YOnsdCuRwT-J8a0zeg4qS8jva_3SB6n3DPteBjCAdn-acWg6LqJAWgdXokVoX_dHCM3jVTUB7q3EHN6QTukyTmzURnGLqWX67M5aNglexcoVapYSGV5d_jkvBgin88-Tz6xQ=w2400);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.pageHeader {
+    font-size: 4rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+
+.drills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+h1,
+p {
+    color: white;
+}
+
+h2 {
+    margin: 2rem;
+    color: white;
+}
+
+footer {
+    margin: 3rem;
+}
+
+
+
