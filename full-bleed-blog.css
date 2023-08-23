@@ -1,77 +1,70 @@
-:root {
-    --yellow: #ffc600;
-  }
 
-  html {
-    color: #444;
-    font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-  }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  p {
-    line-height: 1.8;
-  }
+body {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-position: fixed;
+  background: url(https://lh3.googleusercontent.com/x0pFPxR4FWBa6GBOpKen7PQZDc6he5JTeF8WtK9IkQG5aG3kXwW5vMHZoQcvdK5V-Wuv2c4-uGysHsdnRr7EwGfICtY6SlLMOhZztk87GWbP06mbSxK13xh0tFpE_iYl-l5dJr4dGw=w2400);
+  background-position: center center;
+  background-repeat: repeat;
+  
 
-  img {
-    max-width: 100%;
-  }
+  
+}
 
-  a {
-    color: black;
-    text-decoration: underline wavy var(--yellow);
-  }
+@font-face {
+  font-family: Outward;
+  src: url(Tightrope-Regular.ttf);
+}
 
-  h1,
-  h2 {
-    font-size: 80px;
-    font-weight: 100;
-    margin: 0;
-    text-align: center;
-  }
+h1 {
+  font-family: Outward;
+  color: aliceblue;
+  font-size: 15rem;
+  font-style: italic;
+  
+}
 
-  .post {
-    display: grid;
-    max-width: 1000px;
-    margin: 200px auto;
-    grid-gap: 10px 50px;
-    grid-template-columns: 3fr 12fr 5fr;
-  }
+img {
+  max-width: 100%;
+}
 
-  .post>* {
-    grid-column: 2 / -2;
-  }
+.blogItem {
+  width: 600px;
+  padding: 30px;
+  color: wheat;
+  margin: 3rem auto;
+  border: 3px white solid;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
-  .post>figure {
-    margin: 0;
-    grid-column: 1 / -1;
-  }
+.blogItem h2 {
+  margin: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
 
-  figcaption {
-    font-size: 10px;
-  }
+.blogItem p {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  
+}
 
-  .post>blockquote {
-    grid-column: 1 / -1;
-    font-size: 60px;
-    font-style: italic;
-    text-align: center;
-    margin: 0;
-  }
-
-  .tip {
-    background: #FAFAFA;
-    padding: 10px;
-    grid-row: span 5;
-    align-self: start;
-  }
-
-  .tip-left {
-    grid-column: 1 / span 1;
-    text-align: right;
-    border-right: 2px solid var(--yellow);
-  }
-
-  .tip-right {
-    grid-column: span 1 / -1;
-    border-left: 2px solid var(--yellow);
-  }
+.blogItem:hover {
+  scale: 1.1;
+  transition: all 100ms ease-in;
+}
