@@ -6,15 +6,27 @@
   margin: 0;
 }
 
+:root {
+    --red: #c10206;
+    --white:#fffbf2;
+    --black:#211d21;
+    --grey:#211d21;
+    --carmine: #a50113;
+  }
+
 body {
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    font-family: "Poppins", sans-serif;
 
-    background:url(https://lh3.googleusercontent.com/5fM709YOnsdCuRwT-J8a0zeg4qS8jva_3SB6n3DPteBjCAdn-acWg6LqJAWgdXokVoX_dHCM3jVTUB7q3EHN6QTukyTmzURnGLqWX67M5aNglexcoVapYSGV5d_jkvBgin88-Tz6xQ=w2400);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background:url(https://lh3.googleusercontent.com/5fM709YOnsdCuRwT-J8a0zeg4qS8jva_3SB6n3DPteBjCAdn-acWg6LqJAWgdXokVoX_dHCM3jVTUB7q3EHN6QTukyTmzURnGLqWX67M5aNglexcoVapYSGV5d_jkvBgin88-Tz6xQ=w2400);
+    background-size: cover;*/
+    
+    background: url(https://lh3.googleusercontent.com/x0pFPxR4FWBa6GBOpKen7PQZDc6he5JTeF8WtK9IkQG5aG3kXwW5vMHZoQcvdK5V-Wuv2c4-uGysHsdnRr7EwGfICtY6SlLMOhZztk87GWbP06mbSxK13xh0tFpE_iYl-l5dJr4dGw=w2400); 
+    background-repeat: repeat;
+    background-position: fixed;
     
 }
 
@@ -22,15 +34,72 @@ body {
     font-size: 4rem;
     margin: 2rem;
     text-align: center;
+    
 }
 
+.header__h1 {
+    margin: 5rem auto;
+    font-weight: 300;
+    width: 100%;
+    font-size: 3rem;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1rem;
+    border-top: 4px solid var(--red);
+    border-bottom: 4px solid var(--red);
+    background: rgba(0, 0,0, 0.8);
+    line-height: 1.5;
+    max-width: 1200px;
+}
+
+.mentorship__span {
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: red;
+    font-size: 4rem;
+    
+}
 
 .drills {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
 }
+
+.skating-drill,
+.onIce-drills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+    background-color: rgba(97, 85, 85, 0.6);
+    border-radius: 5px;
+    padding: 10px 0 ;
+    max-width: 460px;
+}
+
+iframe {
+    height: 250px;
+    width: 460px;
+}
+
+.skating-drill p,
+.onIce-drills p {
+    text-align: left;
+    width: 70%;
+    margin-left: 2rem;
+}
+
+.description-span {
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
 
 h1,
 p {
@@ -38,13 +107,61 @@ p {
 }
 
 h2 {
+    font-size: 2.5rem;
     margin: 2rem;
     color: white;
+    margin-top: 3rem;
+}
+
+h3 {
+    color: white;
+    font-size: 1.3rem;
 }
 
 footer {
     margin: 3rem;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(219, 9, 9);
+    font-size: 2rem;
 }
 
 
+@media (max-width: 888px) {
+    html {
+        font-size: .7rem;
+        
+      }
+}
 
+@media (max-width: 638px) {
+    html {
+        overflow-x: hidden;
+      }
+
+    .mentorship-offer {
+        width: 70%;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    .pageHeader {
+        padding-bottom: 5rem;
+    }
+
+    iframe {
+        height: 200px;
+        width: 300px;
+    }
+
+    .skating-drill,
+    .onIce-drills {
+        max-width: 300px;
+    }
+    
+}
