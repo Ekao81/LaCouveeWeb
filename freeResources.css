@@ -70,7 +70,10 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 2em;
-    background-color: rgba(97, 85, 85, 0.6);
+    background: rgba(110, 89, 89, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(170, 18, 18, 0.37);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
     border-radius: 5px;
     padding: 10px 0 ;
     max-width: 460px;
