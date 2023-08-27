@@ -133,6 +133,7 @@ h1 {
   transition: color 0.3s ease-in-out;
   font-size: 1.5rem;
   text-align: center;
+
 }
 
 .menu-items .a-red {
@@ -141,10 +142,33 @@ h1 {
 }
 
 .menu-items a:hover {
-  color: #020202;
+  
   transition: color 0.3s ease-in-out;
-  background-color: #63e7cd;
-  border-radius: 10px;
+  
+}
+
+.hover-animation {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hover-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--red);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .menu-items > li {
