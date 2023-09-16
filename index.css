@@ -744,6 +744,17 @@ li {
 
 .grid__item h1 {
   margin: .3em 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.read-more {
+  color: rgb(89, 89, 236);
+  cursor: pointer;
 }
 
 .grid__item-1 h1,
@@ -1212,7 +1223,7 @@ i {
 
 @media (max-width: 500px) {
     html {
-        font-size: 65%;
+        font-size: 75%;
     }
 
     .menu-items a {

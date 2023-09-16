@@ -19,7 +19,7 @@ body {
   background: url(https://lh3.googleusercontent.com/x0pFPxR4FWBa6GBOpKen7PQZDc6he5JTeF8WtK9IkQG5aG3kXwW5vMHZoQcvdK5V-Wuv2c4-uGysHsdnRr7EwGfICtY6SlLMOhZztk87GWbP06mbSxK13xh0tFpE_iYl-l5dJr4dGw=w2400);
   background-position: center center;
   background-repeat: repeat;
-  
+  font-family: "Poppins", sans-serif;
 
   
 }
@@ -119,6 +119,11 @@ img {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 200;
 } 
+
+a {
+  text-decoration: none;
+  color: wheat;
+}
 
 @media (max-width: 905px) {
   h1 {

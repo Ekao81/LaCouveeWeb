@@ -15,7 +15,7 @@
   }
 
 body {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -129,12 +129,71 @@ footer a {
     font-size: 2rem;
 }
 
+/* ----------------BLOG POST PAGE----------------- */
+
+.blog-div {
+    max-width: 1200px;
+    width: 80%;
+    padding: 3rem;
+    margin: 0 auto;
+    background: rgba( 63, 7, 7, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba(240, 9, 44, 0.37);
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+    border-radius: 2rem;
+    border: 1px solid rgba(150, 18, 18, 0.18);
+  }
+  
+  .blog-div > * {
+    margin: 1rem;
+  }
+  
+  .blog-div h1 {
+    line-height: 1;
+    text-shadow: 4px 4px 16px rgba(22, 2, 2, 0.6);
+    text-align: center;
+  }
+  
+  .blog-div > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  
+  .blog-div > ul {
+    color: wheat;
+    margin-left: 4rem;
+  }
+  
+  .blog-div > a {
+    text-decoration: none;
+  }
+  
+  /* ---------------------------------  */
+  
 
 @media (max-width: 888px) {
     html {
-        font-size: .7rem;
+        font-size: .9rem;
         
       }
+
+      .blog-div {
+        width: 90%;
+      }
+
+      .header {
+        font-size: 3rem;
+      }
+
+      body {
+        width: 90%;
+      }
+
+      .blog-div > p {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 638px) {
@@ -163,5 +222,19 @@ footer a {
     .onIce-drills {
         max-width: 300px;
     }
-    
+
+    .blog-div {
+        width: 99%;
+        margin: 1rem .2 rem;
+        padding: 10px;
+    }
+
+    .blog-div > p {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    body {
+        width: 95%;
+    }
 }
