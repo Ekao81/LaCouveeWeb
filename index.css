@@ -752,8 +752,8 @@ a {
   text-decoration: none;
 }
 
-.read-more {
-  color: rgb(89, 89, 236);
+.read-more a {
+  color: rgb(137, 137, 238);
   cursor: pointer;
 }
 
