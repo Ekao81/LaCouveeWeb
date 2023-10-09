@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 110%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #000;
